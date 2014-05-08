@@ -32,7 +32,7 @@ Forecast.prototype = {
 			}
 
 			if ( options.extend ) {
-				endpoint += delim + 'extend=' + options.extend;
+				endpoint += delim + 'extend=hourly';
 				delim = '&';
 			}
 
@@ -117,7 +117,7 @@ Forecast.Data.Alert = function (rawAlert) {
 
 
 /**
- * Data.Flags - Contains all properties described in the documentation. Properties with hyphon are camel-cased:
+ * Data.Flags - Contains all properties described in the documentation. Properties with hyphen are camel-cased:
  * <code>darkskyUnavailable, darkskyStations, datapointStations, isdStations, lampStations, metarStations, metnoLicense</code>
  */
 Forecast.Data.Flags = function (rawFlags) {
